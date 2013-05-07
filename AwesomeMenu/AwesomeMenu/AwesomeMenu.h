@@ -41,12 +41,18 @@
 @property (nonatomic, assign) CGFloat expandRotation;
 @property (nonatomic, assign) CGFloat closeRotation;
 
-- (id)initWithFrame:(CGRect)frame menus:(NSArray *)aMenusArray;
+- (id)initWithFrame:(CGRect)frame label:(NSString *)labelString menus:(NSArray *)aMenusArray;
 @end
 
 @protocol AwesomeMenuDelegate <NSObject>
+
 - (void)AwesomeMenu:(AwesomeMenu *)menu didSelectIndex:(NSInteger)idx;
+
 @optional
+- (void)AwesomeMenuDidSelectButton:(AwesomeMenu *)menu;
 - (void)AwesomeMenuDidFinishAnimationClose:(AwesomeMenu *)menu;
 - (void)AwesomeMenuDidFinishAnimationOpen:(AwesomeMenu *)menu;
+- (void)AwesomeMenu:(AwesomeMenu *)menu copyItemAtIndex:(NSInteger)idx;
+- (void)AwesomeMenu:(AwesomeMenu *)menu deleteItemAtIndex:(NSInteger)idx;
+- (void)AwesomeMenu:(AwesomeMenu *)menu editItemAtIndex:(NSInteger)idx;
 @end

@@ -10,14 +10,14 @@
 
 @protocol AwesomeMenuItemDelegate;
 
-@interface AwesomeMenuItem : UIImageView
+@interface AwesomeMenuItem : UIImageView <UIGestureRecognizerDelegate>
 {
     UIImageView *_contentImageView;
     CGPoint _startPoint;
     CGPoint _endPoint;
     CGPoint _nearPoint; // near
     CGPoint _farPoint; // far
-    
+    UILabel *_menuItemLabel;
     id<AwesomeMenuItemDelegate> __weak _delegate;
 }
 
@@ -33,12 +33,17 @@
 - (id)initWithImage:(UIImage *)img 
    highlightedImage:(UIImage *)himg
        ContentImage:(UIImage *)cimg
-highlightedContentImage:(UIImage *)hcimg;
+highlightedContentImage:(UIImage *)hcimg
+              label:(NSString *)labelString;
 
-
+- (void)updateLabel:(NSString *)labelString;
 @end
 
 @protocol AwesomeMenuItemDelegate <NSObject>
 - (void)AwesomeMenuItemTouchesBegan:(AwesomeMenuItem *)item;
 - (void)AwesomeMenuItemTouchesEnd:(AwesomeMenuItem *)item;
+@optional
+- (void)copyItem:(AwesomeMenuItem *)item;
+- (void)deleteItem:(AwesomeMenuItem *)item;
+- (void)editItemTitle:(AwesomeMenuItem *)item;
 @end
