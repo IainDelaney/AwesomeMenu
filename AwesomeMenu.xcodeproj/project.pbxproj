@@ -30,6 +30,7 @@
 		5C5949CA153ACC510023B034 /* AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5949C7153ACC510023B034 /* AwesomeMenu.m */; };
 		5C5949CB153ACC510023B034 /* AwesomeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5949C9153ACC510023B034 /* AwesomeMenuItem.m */; };
 		5C93DC61148673F2003029CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C93DC60148673F2003029CA /* QuartzCore.framework */; };
+		B99CF6A417399E1800014758 /* UIImage+frameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B99CF6A317399E1800014758 /* UIImage+frameImage.m */; };
 		DCDD5EA716E5B2A1005D7B61 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDD5EA616E5B2A1005D7B61 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		5C5949C8153ACC510023B034 /* AwesomeMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuItem.h; sourceTree = "<group>"; };
 		5C5949C9153ACC510023B034 /* AwesomeMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuItem.m; sourceTree = "<group>"; };
 		5C93DC60148673F2003029CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B99CF6A217399E1800014758 /* UIImage+frameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+frameImage.h"; sourceTree = "<group>"; };
+		B99CF6A317399E1800014758 /* UIImage+frameImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+frameImage.m"; sourceTree = "<group>"; };
 		DCDD5EA616E5B2A1005D7B61 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +137,8 @@
 		5C3FF3691486564E0098EE93 /* AwesomeMenu */ = {
 			isa = PBXGroup;
 			children = (
+				B99CF6A217399E1800014758 /* UIImage+frameImage.h */,
+				B99CF6A317399E1800014758 /* UIImage+frameImage.m */,
 				5C0364891488A5D4000CE00F /* Images */,
 				5C5949C5153ACC510023B034 /* AwesomeMenu */,
 				5C3FF3721486564E0098EE93 /* AppDelegate.h */,
@@ -245,6 +250,7 @@
 				5C3FF3741486564E0098EE93 /* AppDelegate.m in Sources */,
 				5C5949CA153ACC510023B034 /* AwesomeMenu.m in Sources */,
 				5C5949CB153ACC510023B034 /* AwesomeMenuItem.m in Sources */,
+				B99CF6A417399E1800014758 /* UIImage+frameImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
